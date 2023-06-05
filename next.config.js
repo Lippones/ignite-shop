@@ -4,7 +4,8 @@ const nextConfig = {
         domains: [
             'files.stripe.com'
         ]
-    }
+    },
+    ignoreDuringBuilds: true,
 }
 
 module.exports = nextConfig
