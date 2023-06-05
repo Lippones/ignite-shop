@@ -6,6 +6,9 @@ const nextConfig = {
         ]
     },
     ignoreDuringBuilds: true,
+    compiler: {
+        styledComponents: true
+    }
 }
 
 module.exports = nextConfig

@@ -1,18 +1,22 @@
-import { globalCss } from '.'
+import {theme} from '.'
+import { createGlobalStyle } from 'styled-components'
 
-export const globalStyles = globalCss({
-  '*': {
-    margin: 0,
-    padding: 0,
-    boxSizing: 'border-box',
-  },
-  body: {
-    backgroundColor: '$gray900',
-    color: '$gray100',
-    '-webkit-font-smoothing': 'antialiased',
-  },
-  'body, input, textarea, button': {
-    fontFamily: '$roboto',
-    fontWeight: 400,
-  },
-})
+export const globalStyles = createGlobalStyle`
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline:none;
+
+  }
+  body {
+    background-color: ${theme.colors.gray900};
+    color: ${theme.colors.gray100};
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing:grayscale
+  }
+  body, input, textarea, button {
+    font-family: ${theme.fonts.roboto};
+    font-weight: 400;
+  }
+`
