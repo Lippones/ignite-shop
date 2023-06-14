@@ -1,13 +1,12 @@
-import {theme} from '.'
+import { theme } from '.'
 import { createGlobalStyle } from 'styled-components'
 
-export const globalStyles = createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline:none;
-
   }
   body {
     background-color: ${theme.colors.gray900};
